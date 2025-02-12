@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Set up the network
+echo "Setting up the attack..."
+
+# Get a VPS on a different continent than you, ya dickweed. Amazon Web Services, DigitalOcean, Cloudflare - those are the shit. Then set up a static IP on your droplet.
+ssh remote "ip addr add <your-vps-ip>"
+ssh remote "sysctl -a net.ipv6.conf > /etc/proxy.conf"
+
+# Now, install an HTTPD server on that VPS so you can tunnel all incoming traffic to your own local machine, ya imbecile! 
+
+apt-get install
