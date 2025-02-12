@@ -270,4 +270,4 @@ def reset_job():
 # Start the reset job in a separate thread
 threading.Thread(target=reset_job, daemon=True).start()
 
-bot.polling()g()
+bot.polling()()
